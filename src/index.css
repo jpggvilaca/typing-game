@@ -3,7 +3,43 @@
 }
 
 body {
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+}
+
+p,
+h1,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  align-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.App > h1 {
+  font-size: 34px;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.word-section > h1 {
+  opacity: 0;
+  animation: disappear 1.5s ease-in-out;
+}
+
+@keyframes disappear {
+  from {
+    opacity: 1;
+  }
+  
+  to {
+    opacity: 0;
+  }
 }

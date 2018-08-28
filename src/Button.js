@@ -6,6 +6,7 @@ const StyledButton = styled.button`
   color: white;
   outline: none;
   padding: 10px;
+  font-size: 24px;
   text-transform: uppercase;
   transition: all .3s ease-in-out;
 
