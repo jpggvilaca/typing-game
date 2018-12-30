@@ -15,6 +15,7 @@ import './App.css';
   - Improve styling
   - Add game types
   - Make it multiplayer (v2)
+  - Add tests
 
 */
 
@@ -97,7 +98,7 @@ class App extends Component {
   handleTyping = e => {
     const { currentWord } = this.state;
     const lastLetterFromInput = e.currentTarget.value.split('').pop();
-    const firstLetterFromCurrentWord = currentWord[0];
+    const firstLetterFromCurrentWord = currentWord[0].toLowerCase();
 
     if (lastLetterFromInput === firstLetterFromCurrentWord) {
       currentWord.shift(); // remove the matched letter from the word
