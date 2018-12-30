@@ -47,7 +47,7 @@ class App extends Component {
         if (number === 1) {
           clearInterval(countdown);
 
-          // This timeout compensates the interval and the assynchronous 
+          // This timeout compensates the interval and the assynchronous
           // behaviour of the state in react
           setTimeout(() => {
 
@@ -72,7 +72,6 @@ class App extends Component {
       this.endGameDate.getTime() - this.startGameDate.getTime()
     ) / 1000;
 
-    console.log('timeElapsed: ', timeElapsed);
     this.timeElapsed = timeElapsed;
   }
 
